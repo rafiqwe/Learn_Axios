@@ -1,16 +1,17 @@
-import { useState } from "react";
+import { Post } from "./components/Post";
 
 function App() {
-  const [count, setCount] = useState(0);
   return (
     <>
-      <div>
-        <h1>Hello world</h1>
-        <p>{count}</p>
-        <button onClick={() => setCount(count + 1)}>Click Me </button>
+      <div className="container  ">
+        <div className="head">
+          <h1>Hello Axios Operations </h1>
+          <h2>Posts</h2>
+        </div>
+        <Post />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
